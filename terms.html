@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light only" />
+  <title>Terms — TableVox</title>
+  <meta name="description" content="The agreement between you and TableVox when you use the app." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" href="data:image/svg+xml;utf8,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
+      <rect width='64' height='64' rx='14' fill='%23F8F4E9'/>
+      <rect x='14' y='42' width='36' height='6' rx='3' fill='%23E8A93B' opacity='0.55'/>
+      <text x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='38' fill='%231C1C18'>T</text>
+    </svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --pith: #F8F4E9;
+      --cream: #FAF7F0;
+      --leaf: #2F4A2A;
+      --leaf-pressed: #26371F;
+      --leaf-tint: rgba(47, 74, 42, 0.08);
+      --sage: #8E9A82;
+      --zest: #E8A93B;
+      --zest-stroke: rgba(232, 169, 59, 0.55);
+      --bark: #1C1C18;
+      --border: #E2DDD0;
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; padding: 0;
+      background: var(--pith);
+      color: var(--bark);
+      font-family: var(--sans);
+      font-size: 15px; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .col { width: 100%; max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+    /* Nav (matches index.html) */
+    .nav { position: sticky; top: 0; z-index: 10; background: var(--pith); border-bottom: 1px solid var(--border); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--bark); }
+    .brand-mark { width: 24px; height: 24px; border-radius: 6px; background: var(--bark); color: var(--pith); display: inline-flex; align-items: center; justify-content: center; font-family: var(--serif); font-style: italic; font-size: 16px; line-height: 1; padding-bottom: 2px; }
+    .nav-back { font-size: 13px; color: var(--leaf); }
+    .nav-back:hover { color: var(--leaf-pressed); }
+
+    /* Long-form text page */
+    main { padding: clamp(48px, 8vh, 96px) 0 24px; }
+    .lead-mark { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+    .lead-mark::before {
+      content: ''; display: inline-block; width: 3px; height: 14px;
+      background: var(--zest); border-radius: 2px;
+    }
+    .tiny-label {
+      font-family: var(--sans); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage);
+    }
+    h1 {
+      font-family: var(--serif); font-weight: 400;
+      font-size: clamp(36px, 6vw, 56px);
+      line-height: 1.05; letter-spacing: -0.5px;
+      margin: 0; color: var(--bark);
+    }
+    h1 .zest {
+      background-image: linear-gradient(to top, transparent 12%, var(--zest-stroke) 12%, var(--zest-stroke) 36%, transparent 36%);
+      padding: 0 0.08em; font-style: italic;
+    }
+    .effective { margin-top: 16px; font-size: 13px; color: var(--sage); }
+    .preamble {
+      margin-top: 28px;
+      font-size: 17px; color: var(--bark);
+      line-height: 1.6; max-width: 60ch;
+    }
+
+    article.body { padding-top: 40px; padding-bottom: 80px; }
+    article.body h2 {
+      font-family: var(--serif); font-weight: 400;
+      font-size: 24px; line-height: 1.2; letter-spacing: -0.2px;
+      margin: 56px 0 16px 0; color: var(--bark);
+    }
+    article.body h2:first-of-type { margin-top: 32px; }
+    article.body h3 {
+      font-family: var(--serif); font-weight: 400;
+      font-size: 18px; line-height: 1.3; letter-spacing: -0.1px;
+      margin: 28px 0 8px 0; color: var(--bark);
+    }
+    article.body p { margin: 0 0 14px 0; max-width: 64ch; }
+    article.body ul {
+      margin: 8px 0 18px 0; padding-left: 0; list-style: none; max-width: 64ch;
+    }
+    article.body li { position: relative; padding-left: 18px; margin: 8px 0; }
+    article.body li::before {
+      content: ''; position: absolute; left: 0; top: 11px;
+      width: 5px; height: 5px; border-radius: 50%; background: var(--zest);
+    }
+    article.body strong { font-weight: 500; }
+    article.body em { font-style: italic; font-family: var(--serif); }
+    article.body a { color: var(--leaf); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    article.body a:hover { color: var(--leaf-pressed); }
+
+    /* Boxed callout for important notes */
+    .callout {
+      background: var(--cream);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin: 20px 0 24px 0;
+      font-size: 14px;
+      line-height: 1.55;
+      max-width: 64ch;
+      border-left: 3px solid var(--zest);
+    }
+    .callout p { margin: 0; }
+    .callout p + p { margin-top: 10px; }
+    .callout strong { font-weight: 500; }
+
+    /* Footer (matches index.html) */
+    footer { padding: 40px 0 56px 0; border-top: 1px solid var(--border); background: var(--pith); }
+    .footer-inner { display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    .footer-meta { font-size: 12px; color: var(--sage); }
+    .footer-links { display: flex; gap: 20px; font-size: 13px; color: var(--sage); }
+    .footer-links a:hover { color: var(--bark); }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="/" class="brand" aria-label="TableVox home">
+        <span class="brand-mark">T</span>
+        <span>TableVox</span>
+      </a>
+      <a href="/" class="nav-back">← Back home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="col">
+      <div class="lead-mark"><span class="tiny-label">Terms</span></div>
+      <h1>The deal between <span class="zest">you and us</span>.</h1>
+      <p class="effective">Effective May 2026 · TableVox</p>
+      <p class="preamble">
+        Short version: TableVox is a free pocket menu translator. Use it
+        kindly, take translations as a starting point — never as
+        gospel for allergies — and we won't sell your data or your
+        photos to anyone. The longer version is below.
+      </p>
+    </section>
+
+    <article class="body col">
+
+      <h2>1 · Agreeing to these terms</h2>
+      <p>
+        By creating a TableVox account or using the app, you agree to
+        these terms. If you don't agree, don't use the app — that's
+        the whole stick. We may update these terms occasionally; if a
+        change is material you'll see a notice in the app and the
+        "Effective" date above will move.
+      </p>
+
+      <h2>2 · What TableVox is</h2>
+      <p>
+        TableVox is a community-powered menu translator. You photograph
+        a menu, our backend reads it and translates each dish into your
+        preferred language, and the result is saved so the next diner
+        at the same restaurant gets an instant menu. You can like and
+        comment on dishes, set allergens, and assemble a "plate" of
+        items to show your waiter.
+      </p>
+
+      <h2>3 · Your account</h2>
+      <ul>
+        <li>You're responsible for what happens under your account, including keeping your password reasonable.</li>
+        <li>One person per account. Don't let other people sign in as you.</li>
+        <li>If you sign in with Google or Apple, you're also bound by their terms with respect to that login.</li>
+        <li>You can delete your account anytime by writing to <a href="mailto:support@tablevox.app">support@tablevox.app</a>. See the <a href="/privacy.html">privacy notice</a> for what happens to your data.</li>
+      </ul>
+
+      <h2>4 · Translations are best-effort, not authoritative</h2>
+      <div class="callout">
+        <p>
+          <strong>Important — allergens, especially.</strong>
+          TableVox translations come from machine learning models. They're
+          usually good, sometimes wrong, and they don't know what's
+          actually on the kitchen line.
+        </p>
+        <p>
+          <strong>Always confirm with the waiter before ordering if you have
+          a serious allergy.</strong> The original menu language stays
+          visible next to every translation so you can point at it and
+          ask. Allergen warnings in the app are a hint, not a guarantee.
+        </p>
+      </div>
+      <p>
+        Same goes for price, ingredients, and dietary tags — TableVox
+        is a reading aid, not a substitute for asking your server.
+        We're not responsible for ordering mistakes, missed allergens,
+        or anything else that happens at the table on the strength of
+        a translation alone.
+      </p>
+
+      <h2>5 · What you upload (menu photos, comments)</h2>
+      <p>
+        When you photograph a menu and submit it, you grant TableVox a
+        worldwide, non-exclusive, royalty-free license to host, display,
+        and translate that photo so other diners at the same restaurant
+        can read the menu. The same goes for comments and dish photos
+        you post.
+      </p>
+      <p>
+        You promise that:
+      </p>
+      <ul>
+        <li>You took the photo yourself, or you have the right to share it.</li>
+        <li>The restaurant doesn't post a "no photography" sign you're ignoring.</li>
+        <li>You're not uploading menus that contain trademarks or copyrighted artwork beyond the menu itself (you photograph the printed menu, not the chef's painting on the wall).</li>
+        <li>Comments and dish photos are your own — no harassment, no spam, no images of other people without their consent.</li>
+      </ul>
+      <p>
+        We may remove uploads that get reported and confirmed as
+        violating these rules. We may also remove uploads on request
+        from the restaurant owner.
+      </p>
+
+      <h2>6 · Acceptable use</h2>
+      <p>Please don't:</p>
+      <ul>
+        <li>Harass other diners through comments or reports.</li>
+        <li>Upload content unrelated to a menu (spam, ads, unrelated photos).</li>
+        <li>Reverse-engineer, scrape, or republish the TableVox menu library to compete with us.</li>
+        <li>Submit content you don't have rights to.</li>
+        <li>Try to break the app — rate-limit evasion, injection attempts, the usual.</li>
+      </ul>
+      <p>
+        If you do, we may suspend or terminate your account.
+      </p>
+
+      <h2>7 · Costs</h2>
+      <p>
+        TableVox is free at launch. If we ever introduce paid features,
+        the core translate-the-menu flow stays free. We'll tell you
+        before any change to pricing.
+      </p>
+
+      <h2>8 · Termination</h2>
+      <p>
+        You can stop using TableVox and delete your account anytime.
+        We can suspend or terminate accounts that violate these terms.
+        On termination, we delete what we can within seven days, except
+        anonymised menu uploads, which stay in the public library so
+        future diners can read them.
+      </p>
+
+      <h2>9 · The "as-is" part</h2>
+      <p>
+        TableVox is provided as-is, without warranties of any kind. We
+        do our best to keep translations accurate, the app fast, and
+        your data safe, but the world is messy. We disclaim implied
+        warranties to the maximum extent the law permits — including
+        merchantability, fitness for a particular purpose, and
+        non-infringement.
+      </p>
+
+      <h2>10 · Liability</h2>
+      <p>
+        To the maximum extent permitted by applicable law, TableVox
+        and its operators won't be liable for indirect, incidental,
+        consequential, or punitive damages arising out of your use
+        of the app. Our total liability for direct damages is capped at
+        whatever you've paid us in the prior twelve months — which,
+        for a free app, is usually zero.
+      </p>
+      <p>
+        Some jurisdictions don't allow these limits, so they may not
+        apply to you.
+      </p>
+
+      <h2>11 · Indemnification</h2>
+      <p>
+        You'll indemnify TableVox against claims that arise from
+        content you upload or from your violation of these terms. We
+        promise the same in reverse for issues caused by our service
+        itself.
+      </p>
+
+      <h2>12 · Governing law</h2>
+      <p>
+        These terms are governed by the laws of the State of Florida,
+        United States, without regard to conflict-of-law principles.
+        Any dispute that can't be sorted by writing to us first goes
+        to the state or federal courts located in Palm Beach County,
+        Florida.
+      </p>
+
+      <h2>13 · Contact</h2>
+      <p>
+        Questions, complaints, takedown requests, or feedback — write
+        to <a href="mailto:support@tablevox.app">support@tablevox.app</a>.
+        A human reads every message.
+      </p>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-meta">© 2026 TableVox · Pocket menu translator</span>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="mailto:support@tablevox.app">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
