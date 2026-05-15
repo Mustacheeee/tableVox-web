@@ -13,13 +13,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/og.png" />
 
-  <!-- Favicon: stylised serif T with a lemon-zest mark, drawn inline -->
-  <link rel="icon" href="data:image/svg+xml;utf8,
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
-      <rect width='64' height='64' rx='14' fill='%23F8F4E9'/>
-      <rect x='14' y='42' width='36' height='6' rx='3' fill='%23E8A93B' opacity='0.55'/>
-      <text x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='38' fill='%231C1C18'>T</text>
-    </svg>" />
+  <link rel="icon" type="image/png" href="/voxLogo.png" />
+  <link rel="apple-touch-icon" href="/voxLogo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -137,19 +132,11 @@
       color: var(--bark);
     }
     .brand-mark {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       border-radius: 6px;
-      background: var(--bark);
-      color: var(--pith);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 16px;
-      line-height: 1;
-      padding-bottom: 2px;
+      display: block;
+      object-fit: contain;
     }
     .nav-links {
       display: flex;
@@ -566,7 +553,7 @@
   <header class="nav" id="nav">
     <div class="col nav-inner">
       <a href="#top" class="brand" aria-label="TableVox home">
-        <span class="brand-mark">T</span>
+        <img class="brand-mark" src="/voxLogo.png" alt="" />
         <span>TableVox</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
@@ -859,7 +846,7 @@
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
               </svg>
-            </summary>
+            </summary> 
             <div class="faq-a">
               The minimum we need to make the app work. Your email is used
               to sign in. Your preferred language and allergens stay on

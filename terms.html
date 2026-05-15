@@ -8,12 +8,8 @@
   <meta name="description" content="The agreement between you and TableVox when you use the app." />
   <meta name="robots" content="index, follow" />
 
-  <link rel="icon" href="data:image/svg+xml;utf8,
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
-      <rect width='64' height='64' rx='14' fill='%23F8F4E9'/>
-      <rect x='14' y='42' width='36' height='6' rx='3' fill='%23E8A93B' opacity='0.55'/>
-      <text x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='38' fill='%231C1C18'>T</text>
-    </svg>" />
+  <link rel="icon" type="image/png" href="/voxLogo.png" />
+  <link rel="apple-touch-icon" href="/voxLogo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,7 +48,7 @@
     .nav { position: sticky; top: 0; z-index: 10; background: var(--pith); border-bottom: 1px solid var(--border); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; max-width: 960px; margin: 0 auto; padding: 0 24px; }
     .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--bark); }
-    .brand-mark { width: 24px; height: 24px; border-radius: 6px; background: var(--bark); color: var(--pith); display: inline-flex; align-items: center; justify-content: center; font-family: var(--serif); font-style: italic; font-size: 16px; line-height: 1; padding-bottom: 2px; }
+    .brand-mark { width: 28px; height: 28px; border-radius: 6px; display: block; object-fit: contain; }
     .nav-back { font-size: 13px; color: var(--leaf); }
     .nav-back:hover { color: var(--leaf-pressed); }
 
@@ -138,7 +134,7 @@
   <header class="nav">
     <div class="nav-inner">
       <a href="/" class="brand" aria-label="TableVox home">
-        <span class="brand-mark">T</span>
+        <img class="brand-mark" src="/voxLogo.png" alt="" />
         <span>TableVox</span>
       </a>
       <a href="/" class="nav-back">← Back home</a>
