@@ -451,6 +451,90 @@
       letter-spacing: 0.04em;
     }
 
+    /* ─── Free & Plus ─── */
+    section.plans {
+      padding-top: clamp(48px, 8vh, 96px);
+      padding-bottom: clamp(48px, 8vh, 96px);
+    }
+    .plan-grid {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+    @media (min-width: 720px) {
+      .plan-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .plan {
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+    }
+    .plan.plus {
+      border: 1.4px solid var(--zest-stroke);
+    }
+    .plan-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .plan-name {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: -0.2px;
+    }
+    .plan-chip {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--sage);
+      white-space: nowrap;
+    }
+    .plan-tag {
+      margin-top: 6px;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 15px;
+      color: var(--sage);
+    }
+    .plan-list {
+      list-style: none;
+      margin: 18px 0 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .plan-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--bark);
+    }
+    .plan-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--zest);
+      margin-top: 8px;
+    }
+    .plan-foot {
+      margin-top: 18px;
+      font-size: 12px;
+      color: var(--sage);
+    }
+
     /* ─── FAQ ─── */
     section.faq {
       padding-top: clamp(48px, 8vh, 96px);
@@ -581,6 +665,7 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="#how">How it works</a>
         <a href="#features">Features</a>
+        <a href="#plus">Free &amp; Plus</a>
         <a href="#faq">FAQ</a>
       </nav>
     </div>
@@ -603,7 +688,7 @@
           <a href="#cta" class="pill pill-primary">Get on the waitlist</a>
           <a href="#how" class="pill pill-secondary">See how it works</a>
         </div>
-        <p class="hero-note">Coming soon to iOS and Android. Free to use.</p>
+        <p class="hero-note">Coming soon to iOS and Android. Free to use — with an optional Plus for people who eat out a lot.</p>
       </div>
     </section>
 
@@ -804,6 +889,53 @@
       </div>
     </section>
 
+    <hr class="rule" />
+
+    <!-- ── Free & Plus ──────────────────────────────────────── -->
+    <section class="plans" id="plus">
+      <div class="col">
+        <div class="section-mark"><span class="tiny-label">Free &amp; Plus</span></div>
+        <h2 class="section-title">Free at the table. <span class="serif italic">Plus</span> if you're there often.</h2>
+        <p class="section-lead">
+          Everything you need to read a menu and order is free — and stays
+          free. Plus exists for one kind of person: the one who's at a new
+          restaurant every other night.
+        </p>
+
+        <div class="plan-grid">
+          <article class="plan">
+            <div class="plan-head">
+              <h3 class="plan-name">Free</h3>
+              <span class="plan-chip">Everyone starts here</span>
+            </div>
+            <p class="plan-tag">The whole flow, on the house.</p>
+            <ul class="plan-list">
+              <li>Snap, read, and order in all twelve languages.</li>
+              <li>Allergen flags and the plate — nothing held back.</li>
+              <li>A daily allowance that comfortably covers a day of eating out.</li>
+              <li>On a menu marathon? A short ad tops the allowance back up.</li>
+            </ul>
+            <p class="plan-foot">No card, no trial clock. Just eat.</p>
+          </article>
+
+          <article class="plan plus">
+            <div class="plan-head">
+              <h3 class="plan-name">TableVox Plus</h3>
+              <span class="plan-chip">Optional</span>
+            </div>
+            <p class="plan-tag">More scans, no ads.</p>
+            <ul class="plan-list">
+              <li>Completely ad-free — no top-up breaks, ever.</li>
+              <li>40 menu scans a day.</li>
+              <li>Unlimited restaurants.</li>
+              <li>Keeps TableVox independent and cooking.</li>
+            </ul>
+            <p class="plan-foot">Monthly or yearly. Cancel anytime; the free tier is always waiting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ── FAQ ──────────────────────────────────────────────── -->
     <section class="faq" id="faq">
       <div class="col col-narrow">
@@ -819,9 +951,30 @@
               </svg>
             </summary>
             <div class="faq-a">
-              Yes — fully free at launch. We may add paid features later
-              (offline mode, a deeper sommelier-style explainer for dishes)
-              but the core translate-the-menu flow will always be free.
+              Yes. Snap a menu, read every dish, flag your allergens, build
+              your plate — the whole flow is free, and it stays free. Free
+              use comes with a daily allowance that covers a normal day of
+              eating out; when you're on a roll, a short ad tops it up.
+              <strong>TableVox Plus</strong> is optional — it removes the
+              ads, raises the allowance to 40 scans a day, and helps keep
+              the app running. Nothing you can already do ever moves behind it.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-q">
+              <span>Why are there ads at all?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </summary>
+            <div class="faq-a">
+              Because every scan costs us real money — the reading and
+              translating runs on paid AI infrastructure. Rather than lock
+              the app behind a subscription, we keep it free and let an
+              occasional short ad cover the bill once you're past the daily
+              allowance. Most diners never see one. If you'd rather never
+              see one either, that's exactly what Plus is for.
             </div>
           </details>
 
