@@ -142,7 +142,7 @@
     <section class="col">
       <div class="lead-mark"><span class="tiny-label">Privacy</span></div>
       <h1>What we know, <span class="zest">and don't</span>.</h1>
-      <p class="effective">Effective May 2026 · TableVox</p>
+      <p class="effective">Effective July 2026 · TableVox</p>
       <p class="preamble">
         TableVox is a pocket menu translator. It only works when we know a
         few things about you — what language you prefer, what allergens
@@ -163,15 +163,38 @@
         <li><strong>Dietary tags and allergens you set</strong> — kept on your account and only used to warn <em>you</em> about dishes you might want to avoid.</li>
         <li><strong>Menus you photograph and dish comments you write</strong> — these are intentionally <em>public</em> (see "What others see," below) so the next diner at the same restaurant gets an instant menu.</li>
         <li><strong>Your approximate location</strong> — only if you grant permission. Used in the moment to bias restaurant search results to places near you. We don't store a history.</li>
+        <li><strong>Your TableVox Plus status</strong> — if you subscribe, we store whether (and until when) your subscription is active, so the app knows to skip ads and raise your scan allowance. Billing itself is handled entirely by Apple — we never see your card.</li>
       </ul>
 
       <h2>What we don't collect</h2>
       <ul>
-        <li>No advertising IDs.</li>
-        <li>No third-party analytics scripts, no behavioural tracking, no fingerprinting.</li>
+        <li>No payment card numbers or billing details — Apple handles all of that.</li>
+        <li>No third-party analytics scripts and no fingerprinting.</li>
         <li>No social-graph data — we don't ask for or read your contacts.</li>
-        <li>No payment info — TableVox is free at launch.</li>
+        <li>No selling of your data — not to advertisers, not to anyone.</li>
       </ul>
+
+      <h2>Ads in the free version</h2>
+      <p>
+        The free version of TableVox shows an occasional ad, served by
+        <strong>Google AdMob</strong>, once you go past the daily free
+        allowance. TableVox Plus removes ads entirely.
+      </p>
+      <p>
+        <strong>You choose whether ads are personalized.</strong> On iOS,
+        Apple's tracking prompt asks whether Google may use your device's
+        advertising identifier to make ads more relevant; in the EEA and UK
+        you'll see Google's consent form instead of, or alongside, that
+        prompt. If you say no, you still get ads — just generic ones based
+        on context, not on you.
+      </p>
+      <p>
+        To serve and measure ads, Google may collect device information
+        such as your IP address, device identifiers, and how you interact
+        with the ads shown. That happens under
+        <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's advertising policy</a>.
+        You can change your mind anytime — see "Your choices" below.
+      </p>
 
       <h2>What others see</h2>
       <p>
@@ -198,8 +221,9 @@
       <p>For the app to function we pass small slices of data to a handful of trusted services:</p>
       <ul>
         <li><strong>OpenAI</strong> — menu text and dish descriptions are sent to OpenAI's API so the model can OCR a photo and translate the dishes. <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI's privacy policy</a> applies to that hop. No identifying data about you is included.</li>
-        <li><strong>Google</strong> — restaurant search uses the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Places API</a>; sign-in with Google goes through Google OAuth.</li>
-        <li><strong>Apple</strong> — sign-in with Apple goes through Apple's identity service, which returns an opaque token to us. We never see your Apple ID.</li>
+        <li><strong>Google</strong> — restaurant search uses the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Places API</a>; sign-in with Google goes through Google OAuth; and ads in the free version are served by Google AdMob (see "Ads in the free version," above).</li>
+        <li><strong>Apple</strong> — sign-in with Apple goes through Apple's identity service, which returns an opaque token to us. We never see your Apple ID. Plus subscriptions are billed by Apple through your App Store account.</li>
+        <li><strong>RevenueCat</strong> — keeps track of Plus subscriptions. It receives a pseudonymous app user ID and the purchase receipt from Apple — never your name, email, or payment details. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's privacy policy</a> applies to that hop.</li>
       </ul>
 
       <h2>Cookies and similar tech</h2>
@@ -232,8 +256,16 @@
         delete it. Your row, your dietary preferences, and any photos that
         attribute uploads to you are removed within seven days. Menu and
         dish photos themselves stay in the public library, but the upload
-        attribution becomes "Anonymous diner. You can also trigger account deletion directly within
-        the App under Settings > Account > Delete Account for immediate processing."
+        attribution becomes "Anonymous diner." You can also delete your
+        account directly in the app — Account &rarr; Delete account — for
+        immediate processing.
+      </p>
+      <h3>Change your mind about personalized ads</h3>
+      <p>
+        On iOS: Settings &rarr; Privacy &amp; Security &rarr; Tracking, and
+        toggle TableVox off. Ads keep working — they just stop being
+        personalized. In the EEA and UK you can revisit your consent from
+        the ads consent form whenever it's shown.
       </p>
       <h3>Withdraw location permission</h3>
       <p>
